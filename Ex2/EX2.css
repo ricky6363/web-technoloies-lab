@@ -2,13 +2,7 @@ h1 {
     color: navy;
     margin-left: 20px;
   }
-  .image-container {
-    display: flex;
-}
-
-.text-container {
-    flex: 1;
-}
+ 
 ul.a {
     list-style-type: circle;
   }
