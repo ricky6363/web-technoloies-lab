@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>By using Inline CSS</title>
+    <style>
+        video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            min-width: 100%;
+            min-height: 100%;
+            z-index: -1; /* Place the video behind other elements */
+        }
+        
+        body {
+            /* Set the background color to black in case the video is not available */
+            background-color: black;
+            margin: 0; /* Remove default margin to ensure video covers the entire viewport */
+            overflow: hidden; /* Hide any overflow content */
+        }
+        
+        
+        
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px; /* Add padding as needed */
+        }
+        
+        .text-container {
+            flex: 1;
+        }
+        
+        .image-container {
+            flex: 1;
+            max-width: 70%; /* Adjust the width of the image container */
+        }
+        
+        .image-container img {
+            max-width: 100%; /* Make the image responsive within its container */
+            height: auto;
+        }
+        
+        p {
+            font-family: verdana;
+            font-size: 20px;
+            color: antiquewhite;
+        }
+        
+        .link {
+            color: white;
+        }
+        .center-text {
+            text-align: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-family: 'Arial', sans-serif; /* Use a modern font-family of your choice */
+            font-weight: 700; /* Use a bold font weight for a modern look */
+            font-size: 36px; /* Adjust font size as needed */
+            text-transform: uppercase; /* Converts text to uppercase for a modern style */
+            letter-spacing: 2px; /* Adjust letter spacing as needed */
+        }
+    </style>
+</head>
+
+    <body>
+        <!-- Video Background -->
+        <video autoplay muted loop>
+        <source src="ktm 390 duke 2024.mp4" type="video/mp4"> <!-- Replace 'your-video.mp4' with your video file -->
+        </video>
+    <div class="center-text">
+        <p style="color:rgb(239, 242, 246);">THE SPAWN OF THE BEAST</p>
+       <h1>NEW kTM 2024 DUKE MODELS</h1> 
+    </div>
+</body>
+
+</html>
